@@ -1,0 +1,88 @@
+baseURL = "http://fikriks.github.io/"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+enableEmoji = true
+
+[author]
+  name = "Fikri Khairul Shaleh"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+  
+
+  # Metadata mostly used in document's head
+  description = "Blog Pribadi Fikri KS"
+  keywords = "homepage, blog"
+  images = [""]
+
+  homeSubtitle = "Kang Molor"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Default theme "light" or "dark"
+  defaultTheme = "light"
+
+# Colors for favicons
+  [params.favicon.color]
+    mask = "#252627"
+    msapplication = "#252627"
+    theme = "#252627"
+
+  [params.logo]
+    logoText     = "$ cd /home/"
+    logoHomeLink = "/"
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoCursorColor    = "#67a2c9"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
+
+  # Social icons
+  [[params.social]]
+    name = "instagram"
+    url  = "https://instagram.com/fikriks14"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:fikriks130@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/fikriks14"
+
+  [[params.social]]
+    name = "facebook"
+    url  = "https://www.facebook.com/fkhairulshaleh2"
+
+
+[languages]
+  [languages.en]
+    title = "Fikri Khairul Shaleh"
+    subtitle = "Blog Pribadi"
+    keywords = ""
+    copyright = ""
+    readOtherPosts = "Baca Selengkapnya"
+
+    [languages.en.params.logo]
+      logoText = "fikri ks"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
+
+    [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
